@@ -178,7 +178,7 @@ footer .glyphicon {
   visibility: visible;
 }
 .robotimg{
-  padding:auto;
+  height: 10%;
 }
 
 @keyframes slide {
