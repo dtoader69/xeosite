@@ -15,10 +15,17 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="slick/slick/slick.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<div class="jumbotron text-center">
+  <h1>Xeo</h1> 
+  <p>“Team divides tasks and multiplies the success.”</p> 
+  
+</div>
+
+<nav class="navbar" data-spy="affix" data-offset="360">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -48,12 +55,6 @@
     </div>
   </div>
 </nav>
-
-<div class="jumbotron text-center">
-  <h1>Xeo</h1> 
-  <p>“Team divides tasks and multiplies the success.”</p> 
-  
-</div>
 
 
 <div id="about" class="container-fluid">
@@ -263,7 +264,7 @@
 
   <div class="col-sm-4">
 	<a class="robotimg">
-		<img src="media/robot1.png">
+		<img class="robotimg" src="media/robot1.png">
 		<div class="overlay">
 			<div class="text"><img class="logo" src="media/VV16.png"></div>
 		</div>
@@ -278,7 +279,14 @@
 	</a>
   </div>
 		
-  <div class="col-sm-4"><a class="robotimg"><img class="robotimg" src="media/Placeholder.png"></a></div>
+  <div class="col-sm-4">
+	<a class="robotimg">
+		<img class="robotimg" src="media/Placeholder.png">
+		<div class="overlay">
+			<div class="text"><img class="logo" src="media/RR18.png"></div>
+		</div>
+	</a>
+  </div>
 </div>
 
 
@@ -307,7 +315,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button id="mailBtn" class="btn btn-default pull-right" onclick()="sendMail()">Send</button>
         </div>
       </div>
     </div>

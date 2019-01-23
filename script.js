@@ -20,6 +20,16 @@ $(document).ready(function(){
       });
     } // End if
   });
+  function sendMail() {
+	  Email.send({
+		Body: "This is a subject",
+		Subject: "this is the body",
+		From: "me@ldygaga.com",
+		SecureToken: "63cb3a19-2684-44fa-b76f-debf422d8b00",
+		To: "xeoalbaiulia@gmail.com"}).then(
+		message => alert(message)
+		);
+  }
   window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
@@ -80,3 +90,5 @@ $(document).ready(function(){
   ]
   });
 })
+
+//Security Token E-mail: f0d9f9bd-fe1e-4728-8ed9-07ae82454147
