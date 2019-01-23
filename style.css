@@ -43,6 +43,12 @@ h4 {
 .container-fluid {
   padding: 60px 10%;
 }
+.carusel-img {
+    height: 92px; 
+    width: 92px; 
+    max-width: 92px; 
+    max-height: 92px;
+}
 .bg-grey {
   background-color: #f6f6f6;
 }
@@ -178,7 +184,8 @@ footer .glyphicon {
   visibility: visible;
 }
 .robotimg{
-  height: 10%;
+  width: 278px;
+  height: 493px;
 }
 
 @keyframes slide {
