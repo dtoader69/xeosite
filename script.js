@@ -42,7 +42,7 @@ $(document).ready(function(){
   $('.responsive').slick({
   arrows: true,
   infinite: true,
-  dots: true,
+  dots: false,
   centerMode: true,
   centerPadding: '60px',
   speed: 300,
@@ -57,7 +57,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

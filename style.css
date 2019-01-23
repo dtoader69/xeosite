@@ -44,10 +44,58 @@ h4 {
   padding: 60px 10%;
 }
 .carusel-img {
-    height: 92px; 
-    width: 92px; 
+    height: auto; 
+    width: auto; 
     max-width: 92px; 
     max-height: 92px;
+}
+.logo {
+	width:300px;
+	height:300px;
+}
+.overlay {
+  position: absolute;
+  pointer-events: none;
+  top: -235px;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  background-color: RGBA(150,150,150,0.5);
+}
+.robotimg :hover{
+	overflow: hidden;
+	
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.robotimg:hover .overlay{
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .bg-grey {
   background-color: #f6f6f6;
@@ -186,6 +234,16 @@ footer .glyphicon {
 .robotimg{
   width: 278px;
   height: 493px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 @keyframes slide {
