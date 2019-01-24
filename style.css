@@ -239,6 +239,10 @@ footer .glyphicon {
   -webkit-animation-duration: 1s;
   visibility: visible;
 }
+.robotimg1{
+
+  max-height: 540px;
+}
 .robotimg{
   width: 278px;
   height: 493px;
